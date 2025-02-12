@@ -1,12 +1,12 @@
 body {
     margin: 0;
     font-family: Roboto;
-    color: #F9FAF8;
 }
 
 #main-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #1F2937;
 }
 
@@ -17,19 +17,28 @@ body {
     padding: 5px 150px;
 }
 
-.logo {
-    font-size: 24px;
-    color: F9FAF8;
+#about-header, #logo {
+    color: #F9FAF8;
 }
 
-.links {
+#about-header {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0 20px;
+}
+
+#logo {
+    font-size: 24px;
+}
+
+#links {
     font-size: 18px;
     color: #e5e7eb;
     gap: 20px;
 }
 
-.links,
-.logo {
+#links,
+#logo {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -56,12 +65,6 @@ li {
     align-items: center;
     width: 500px;
     height: 250px;
-}
-
-#about-header {
-    font-size: 48px;
-    font-weight: 900;
-    margin: 0 20px;
 }
 
 p {
