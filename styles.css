@@ -3,42 +3,41 @@ body {
     font-family: Roboto;
 }
 
-#main-section {
+.main-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #1F2937;
 }
 
-#header {
+.main-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 5px 150px;
 }
 
-#about-header, #logo {
-    color: #F9FAF8;
-}
-
-#about-header {
+.about-header {
     font-size: 48px;
     font-weight: 900;
     margin: 0 20px;
 }
 
-#logo {
+.main-logo {
     font-size: 24px;
 }
 
-#links {
+.about-header, .main-logo {
+    color: #F9FAF8;
+}
+.main-links {
     font-size: 18px;
     color: #e5e7eb;
     gap: 20px;
 }
 
-#links,
-#logo {
+.main-logo,
+.main-links {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,11 +45,11 @@ body {
     list-style-type: none;
 }
 
-li {
+.link {
     gap: 2px;
 }
 
-#about {
+.about {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -58,7 +57,7 @@ li {
     gap: 100px;
 }
 
-#about-left {
+.about-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,24 +93,24 @@ p {
     transform: translateY(1px);
 }
 
-#profile-picture {
+.profile-picture {
     background: gray;
     width: 250px;
     height: 250px;
 }
 
-#info-section {
+.info-section {
     display: flex;
     flex-direction: column;
 }
 
-#info-highlights {
+.info-highlights {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 50px;
 }
-#info-header {
+.info-header {
     font-size: 36px;
     font-weight: 900;
     text-align: center;
@@ -138,14 +137,14 @@ p {
     padding: 8px 0 80px 0;
 }
 
-#quote-section {
+.quote-section {
     display: flex;
     flex-direction: column;
     background-color: #e5e7eb;
     padding: 80px 160px;
 }
 
-#quote {
+.quote {
     font-size: 36px;
     color:#1F2937;
     font-weight:lighter;
@@ -153,19 +152,19 @@ p {
     text-align: justify;
 }
 
-#quote-author {
+.quote-author {
     font-size: 20px;
     text-align: right;
     font-weight: bold;
     padding-top: 8px;
 }
 
-#signup-container {
+.signup-container {
     display: flex;
     justify-content: center;
 }
 
-#signup-section {
+.signup-section {
     display: flex;
     flex-direction: row;
     align-items: center ;
@@ -180,13 +179,13 @@ p {
     background-color: #5690ec;
 }
 
-#signup-left-side {
+.signup-left-side {
     display: flex;
     flex-direction: column;
     width: 400px;
 }
 
-#signup-button {
+.signup-button {
     font-size:18px;
     border-style: solid;
     border-color: #F9FAF8;
@@ -195,16 +194,16 @@ p {
     height: 50px;
 }
 
-#signup-header {
+.signup-header {
     font-size: 24px;
     font-weight: bold;
 }
 
-#signup-info {
+.signup-info {
     margin: 0;
 }
 
-#footer {
+.footer {
     background-color: #1F2937;
     color:#F9FAF8;
     text-align: center;
