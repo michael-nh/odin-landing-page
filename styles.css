@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 5px 150px;
 }
 
@@ -27,9 +28,11 @@ body {
     font-size: 24px;
 }
 
-.about-header, .main-logo {
+.about-header,
+.main-logo {
     color: #F9FAF8;
 }
+
 .main-links {
     font-size: 18px;
     color: #e5e7eb;
@@ -49,7 +52,7 @@ body {
     gap: 2px;
 }
 
-.about {
+.about-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,15 +69,22 @@ body {
     height: 250px;
 }
 
-p {
+.about-text {
     font-size: 18px;
+    margin: 0;
     color: #e5e7eb;
     text-wrap: wrap;
-    text-align: justify;
+    text-align: center;
+    line-height: 1.75;
+}
+
+.odin-text {
+    font-weight: 600;
+    color: purple;
 }
 
 .button {
-    width: 80px;
+    width: fit-content;
     height: 25px;
     padding: 4px 8px;
     background-color: #3882f6;
@@ -94,9 +104,19 @@ p {
 }
 
 .profile-picture {
-    background: gray;
-    width: 250px;
-    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d7d7d7;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+#odin-icon {
+    width: 200px;
+    height: 200px;
+    padding-top: 20px;
 }
 
 .info-section {
@@ -110,6 +130,7 @@ p {
     justify-content: center;
     gap: 50px;
 }
+
 .info-header {
     font-size: 36px;
     font-weight: 900;
@@ -121,34 +142,49 @@ p {
 .info {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
 .info-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 200px;
-    border-style:solid;
-    border-width: 4px;
     border-radius: 15px;
-    border-color: #3882f6;
+    background-color: #1F2937;
+    box-shadow: 5px 5px 4px #e5e5e5;
+}
+
+.info-image {
+    width: 50%;
+    height: 50%;
+}
+
+.image-offset {
+    padding-right: 12%;
 }
 
 .info-text {
     text-align: center;
+    text-wrap: wrap;
     width: 200px;
-    padding: 8px 0 80px 0;
+    margin: 0;
+    padding: 20px 0;
 }
 
 .quote-section {
     display: flex;
     flex-direction: column;
     background-color: #e5e7eb;
-    padding: 80px 160px;
+    padding: 40px 160px;
 }
 
 .quote {
     font-size: 36px;
-    color:#1F2937;
-    font-weight:lighter;
-    font-style:italic;
+    color: #1F2937;
+    font-weight: lighter;
+    font-style: italic;
     text-align: justify;
 }
 
@@ -167,14 +203,13 @@ p {
 .signup-section {
     display: flex;
     flex-direction: row;
-    align-items: center ;
+    align-items: center;
     justify-content: space-evenly;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #F9FAF8;
-    width: 800px;
-    height: 100px;
-    margin: 100px;
-    padding: 24px;
+    width: 600px;
+    height: fit-content;
+    margin: 50px;
     gap: 20px;
     background-color: #5690ec;
 }
@@ -186,27 +221,36 @@ p {
 }
 
 .signup-button {
-    font-size:18px;
+    font-size: 18px;
     border-style: solid;
     border-color: #F9FAF8;
-    border-width: 1px;
-    width: 160px;
+    border-width: 2px;
+    width: fit-content;
     height: 50px;
 }
 
 .signup-header {
     font-size: 24px;
     font-weight: bold;
+    padding-top: 12px;
 }
 
-.signup-info {
+.update-info {
     margin: 0;
+    padding: 12px 0;
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
     background-color: #1F2937;
-    color:#F9FAF8;
+    color: #F9FAF8;
     text-align: center;
     padding: 50px;
 }
 
+.attributions-header {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 12px;
+}
